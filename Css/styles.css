@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+ 
+#conteneur {
+  background-color: #501515;
+  width: 400px;
+  height: 700px;
+  margin: 100px auto;
+ 
+  flex-direction: column;
+}
+ 
+ 
+#conteneur .etagere {
+  background-color: #501515;
+  border: 8px solid #802020;
+  width: 384px;
+  height: 100px;
+  display: flex;
+}
+ 
+ 
+.livre {
+  background-color: #fce171;
+  color: #501515;
+  text-align: center;
+  font: bold 14px Arial;
+  border: 2px solid #818106;
+}
+ 
+.vertical {
+  width: 5%;
+  height: 75%;
+}
+ 
+.horizontal {
+  width: 40%;
+  height: 15%;
+  text-align: left;
+  padding-left: 1%;
+}
+ 
+#conteneur .etagere:nth-child(1) {
+  align-items: flex-end;
+}
+ 
+#conteneur .etagere:nth-child(2) .livre:nth-child(even) {
+  width: 8%;
+}
+ 
+#conteneur .etagere:nth-child(2) {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+ 
+#conteneur .etagere:nth-child(3) {
+  justify-content: center;
+  align-items: end;
+}
+ 
+#conteneur .etagere:nth-child(4) {
+  justify-content: space-around;
+  align-items: end;
+}
+ 
+#conteneur .etagere:nth-child(5) {
+  justify-content: space-between;
+  align-items: end;
+}
+ 
+#conteneur .etagere:nth-child(6) {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
